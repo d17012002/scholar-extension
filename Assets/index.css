@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  padding: 0;
+  animation-name: animate;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes animate {
+  0% {
+    position: relative;
+    bottom: 1000px;
+  }
+  100% {
+    position: relative;
+    bottom: 0;
+  }
+}
+#home-section {
+  width: 250px;
+  height: 450px;
+  color: rgb(0, 0, 0);
+  padding-top: 10px;
+  padding-left: 12px;
+  overflow: hidden;
+  background-color: #f2ffe9;
+}
+
+.eg {
+  visibility: hidden;
+}
+#dictHeading {
+  font-weight: 500;
+}
+em {
+  font-weight: 400;
+  color: #d1e2d1;
+}
+.overlay {
+  visibility: visible;
+}
+.popup {
+  background-color: #557c55;
+  border-radius: 10px;
+  color: rgb(245, 248, 250);
+  visibility: hidden;
+  margin-right: 12px;
+  font-weight: 500;
+  padding: 3%;
+  position: relative;
+  bottom: 250px;
+  line-height: 20px;
+}
+.back {
+  font-size: larger;
+  text-align: center;
+}
+.search-container {
+  position: absolute;
+  top: 7px;
+  width: 220px;
+  background: #557c55;
+  height: 26px;
+  border-radius: 30px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.8s;
+}
+::placeholder {
+  color: #f2ffe9;
+}
+input {
+  color: white;
+}
+.search-container:hover > .search-input {
+  width: 173px;
+}
+.search-container .search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: 0.8s;
+}
+.search-container .search-btn .fas {
+  color: #5cbdbb;
+}
+table {
+  margin-top: -11px;
+  position: relative;
+  right: 8px;
+}
+#news-txt {
+  position: relative;
+  color: black;
+  margin-top: 35px;
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 4px;
+}
+th {
+  padding: 5px;
+}
+th:hover {
+  position: relative;
+  bottom: 4px;
+}
+.news-img {
+  width: 100px;
+  border-radius: 7px;
+}
+ #app-txt {
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-style: bold;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+.app-img {
+  width: 100%;
+  height: 100%;
+}
+.setting {
+  margin-top: 23px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Dropdown */
+.dropdown {
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  right: 13px;
+}
+
+.dd-button {
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px 30px 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  left: 25px;
+  width: 200px;
+  top: 100%;
+  border-radius: 7px;
+  color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 8px 8px 6px #888888;
+  background-color: #2b2c2b;
+  list-style-type: none;
+}
+.dd-input + .dd-menu {
+  display: none;
+}
+
+.dd-input:checked + .dd-menu {
+  display: block;
+}
+
+.dd-menu li {
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.dd-menu li.divider {
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.app-table {
+  margin-top: 4px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  width: 180px;
+  height: 150px;
+}
+td{
+  padding-left: 8px;
+  font-weight: 500;
+  font-size: 11px;
+}

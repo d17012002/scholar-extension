@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="../Assets/index.css">
+  <title>Student Pack</title>
+</head>
+
+<body>
+  <section id="home-section">
+    <div class="search-container">
+      <input id="input" type="text" name="search" placeholder="Search..." class="search-input" style="color: #F2FFE9">
+      <i id="search" style="color: ivory;" class="fas fa-search"></i>
+    </div>
+    <div class="overlay">
+      <p id="news-txt">News & Blogs</p>
+      <center>
+        <table>
+          <tr>
+            <th><a href="news.html"><img class="news-img" src="../Assets/img/news.png" alt=""></a></th>
+            <th><a href="blog.html"><img class="news-img" src="../Assets/img/Blogs.png" alt=""></a></th>
+          </tr>
+        </table>
+      </center>
+      <label class="dropdown">
+
+        <div class="dd-button">
+          Applications
+        </div>
+
+        <input type="checkbox" class="dd-input" id="test">
+
+        <ul class="dd-menu">
+            <table class="app-table" >
+            <tr>
+              <th><i class="fa-solid fa-2x fa-list-check"></i></th>
+              <th><i class="fa-solid fa-2x fa-music"></i></th>
+              <th><i class="fa-solid fa-2x fa-calculator"></i></th>
+            </tr>
+            <tr>
+              <td>Todo</td>
+              <td>Music</td>
+              <td>Calc</td>
+            </tr>
+            <tr>
+              <th><i class="fa-solid fa-2x fa-clock"></i></th>
+              <th><i class="fa-solid fa-2x fa-face-grin-tongue-wink"></i></th>
+              <th><i class="fa-solid fa-2x fa-gamepad"></i></th>
+            </tr>
+            <tr>
+              <td>Clock</td>
+              <td>Jokes</td>
+              <td>Game</td>
+            </tr>
+            </table>
+        </ul>
+
+      </label>
+    </div>
+    <div class="setting">
+      <div id="setName"><i class="fa-solid fa-gear"></i></div>
+    </div>
+    <div class="popup">
+      <p id="dictHeading"><u>Dictionary <i class="fas fa-spell-check"></i></u></p><br>
+      <p>Word : <em id="word"> </em></p>
+      <p>Speech :<em id="speech"> </em></p>
+      <p>Meaning :<em id="def"> </em>
+      <p class="eg">Example :<em id="eg"> </em></p>
+      <div class="back">
+        <i id="back" class="fas fa-times-circle"></i>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="../javascript/index.js"></script>
+
+</html>

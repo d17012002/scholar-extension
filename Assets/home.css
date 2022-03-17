@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+   
+  }
+#home-section{
+    width: 250px;
+    height: 450px;
+    color: rgb(231, 228, 228);
+    padding-top: 10px;
+    padding-left: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color:#202020;
+ }
+
+ .welcome{
+    margin-top: 120px;
+ }
+ p{
+    font-size: small;
+    font-weight: 500;
+ }
+ .name{
+    position: relative;
+    color: rgb(236, 236, 236);
+    -webkit-text-stroke: 0.01vh rgb(236, 236, 236);
+    text-transform: uppercase;
+  }
+  .name::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    color: rgb(252, 72, 72);
+    -webkit-text-stroke: 0.03vh rgb(252, 72, 72);
+    border-right: 2px solid rgb(252, 72, 72);
+    overflow: hidden;
+    animation: animate 2.4s linear infinite;
+  }
+  @keyframes animate {
+    0%,10%,100%{
+      width: 0;
+    }
+    70%,90%{
+      width: 85px;
+    }
+  }

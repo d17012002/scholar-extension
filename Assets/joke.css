@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    animation-name: joke-slide;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes joke-slide {
+    from{
+        position: relative;
+        left: 500px;
+    }
+    to{
+        position: relative;
+        left: 0px;
+    }
+}
+
+#joke-section{
+    color: white;
+    width: 250px;
+    height: 450px;
+    background-image: url(img/robo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    width: 100px;
+    padding-left: 10%;
+}
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.buttoncss{
+    padding-left: 10%;
+}
+button{
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+    background: tomato;
+    border-radius: 5px;
+    box-shadow: 1px 2px 20px 10px rgba(224, 46, 46, 0.2);
+}
+
+button:hover{
+    filter: brightness(95%);
+}
+
+button:active{
+    transform: scale(0.98);
+}
+button:disabled{
+    cursor: default;
+    filter: brightness(30%);
+}
+.fas{
+    font-size: 15px;
+    padding-left: 15px;
+    animation-name: back-btn;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes back-btn {
+    0%{
+        position: relative;
+        right: 0px;
+    }
+    50%{
+        position: relative;
+        right: 3px;
+
+    }
+    100%{
+        position: relative;
+        right: 0px;
+    }
+}
+a{
+    text-decoration: none;
+    color: white;
+}

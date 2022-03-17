@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  animation-name: blog-slide;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+
+}
+@keyframes blog-slide {
+  from{
+      position: relative;
+      left: 500px;
+  }
+  to{
+      position: relative;
+      left: 0px;
+  }
+}
+#blog-section{
+  width: 250px;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 450px;
+  color: rgb(231, 228, 228);
+  font-weight: 500;
+  font-size: 13px;
+  background-color: #202020;
+  animation-name: animate;
+  animation-duration: 1s;
+  animation-iteration-count: 1.5;
+}
+.back{
+  margin-right: 8px;
+  margin-top: 14px;
+  display: flex;
+  font-size: larger;
+}
+.search-container {
+  position: relative;
+  top: 7px;
+  width: 190px;
+  background: #ffffff;
+  height: 24px;
+  border-radius: 30px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.8s;
+}
+::placeholder {
+  color: #4b4b4b;
+}
+input {
+  color: rgb(34, 34, 34);
+}
+.search-container:hover > .search-input {
+  width: 160px;
+}
+.search-container .search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: 0.8s;
+}
+
+.search-container .search-btn .fas {
+  color: #5cbdbb;
+}
+::-webkit-scrollbar{
+  width: 0px;
+}
+.hide-init1{
+  display: none;
+  position: relative;
+  bottom: 10px;
+}
+.hide-init2{
+  display: block;
+  position: relative;
+  bottom: 10px;
+}
+.hide-init3{
+  display: block;
+  position: relative;
+  bottom: 10px;
+}
+.hide-init4{
+  display: block;
+  position: relative;
+  bottom: 10px;
+}
+.hide1{
+  display: block;
+}
+.hide2{
+  display: none;
+}
+.hide3{
+  display: none;
+}
+.hide4{
+  display: none;
+}
+
+.blog-card {
+  border-radius: 3px;
+  color: rgb(27, 27, 27);
+  padding-top: 5%;
+  padding-bottom: 1px;
+  background: rgb(255, 255, 252);
+}
+.blog-card:hover{
+  box-shadow: 6px 6px 4px #474747;
+}
+img {
+  position: relative;
+  right: 5px;
+  width: 200px;
+  border-radius: 5px;
+  height: 100px;
+}
+
+p {
+  padding: 1%;
+  line-height: 15px;
+}
+.blog-txt {
+  padding-top: 4px;
+  text-align: left;
+}

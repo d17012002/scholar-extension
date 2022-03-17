@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 250px;
+    height: 450px;
+    background-color: #F2FFE9;
+}
+
+#news-txt{
+    color: rgb(0, 0, 0);
+    font-style: bold;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#news{
+    margin: 5% 0;
+    text-align: center;
+}
+
+.card{
+    
+    width: 250px;
+    height: 450px;
+    padding: 0 10%;
+    overflow-y: auto;
+    background-color:#F2FFE9;
+}
+.btn{
+    color: #557C55;
+}
+.prev, .next{
+    filter: invert(100%);
+}
+.input-group{
+    margin: 3rem 0;
+}

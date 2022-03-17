@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../Assets/timer.css" />
+    <title>Countdown Timer</title>
+  </head>
+  <body>
+    <!-- <h1>Countdown Timer</h1> -->
+    <section>
+      <div class="container">
+        <div>
+           <p id="timer-txt">Timer</p>
+        </div>
+      </div>
+      <div id="container">
+        <!-- <p id="main">Timer</p> -->
+        
+        <p id="hour-label" class="label">Hr</p>
+        <p id="min-label" class="label">Min</p>
+        <p id="sec-label" class="label">Sec</p>
+        <input
+          id="hour"
+          type="number"
+          max="60"
+          min="0"
+          value="0"
+          class="time"
+        />
+        <p id="p1" class="semicolon">:</p>
+        <input
+          id="minute"
+          type="number"
+          max="60"
+          min="0"
+          value="0"
+          class="time"
+        />
+        <p id="p2" class="semicolon">:</p>
+        <input id="sec" type="number" max="60" min="0" value="0" class="time" />
+        <button id="start" class="btn">
+          <img id="play-img" src="../Assets/img/play-button.png" alt="play-button">
+        </button>
+        <button id="reset" class="btn">
+          <img id="reset-img" src="../Assets/img/reset.png" alt="reset">
+        </button>
+        
+      </div>
+      <!-- <div>
+        <audio id="my_sound" src="Assets/audio/alert-tone.mp3" > </audio>
+      </div> -->
+    </section>
+
+    <script src="../javascript/timer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Assets/news.css">
+
+  <title>NEWS</title>
+</head>
+
+<body>
+  <section id="news">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card">
+            <img src="../Assets/img/news-img.jpg" class="card-img-top">
+            <div class="card-body">
+              <h3 id="news-txt" class="card-title">Get News in Seconds</h3>
+              <form class="search" action="">
+                <div class="input-group mb-3">
+                  <input type="text" class="input form-control" placeholder="Search Topic">
+                  <button class="btn btn-outline-primary" type="submit" id="button-addon2">GO</button>
+                </div>
+              </form>
+              <h5 id="dyn-text"></h5>
+            </div>
+          </div>
+        </div>
+        <button class="prev carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="next carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script type="module" src="../javascript/apiKeys.js"></script>
+  <script type="module" src="../javascript/news.js"></script>
+
+</body>
+</html>
