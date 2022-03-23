@@ -39,7 +39,7 @@ body{
     -webkit-text-stroke: 0.03vh rgb(252, 72, 72);
     border-right: 2px solid rgb(252, 72, 72);
     overflow: hidden;
-    animation: animate 2.4s linear infinite;
+    animation: animate 1.2s linear infinite;
   }
   @keyframes animate {
     0%,10%,100%{

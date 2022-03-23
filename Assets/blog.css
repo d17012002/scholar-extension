@@ -24,7 +24,7 @@ body {
   color: rgb(231, 228, 228);
   font-weight: 500;
   font-size: 13px;
-  background-color: #202020;
+  background-color: #89ABE3FF;
   animation-name: animate;
   animation-duration: 1s;
   animation-iteration-count: 1.5;
@@ -115,7 +115,7 @@ input {
   background: rgb(255, 255, 252);
 }
 .blog-card:hover{
-  box-shadow: 6px 6px 4px #474747;
+  box-shadow: 6px 6px 4px #567283;
 }
 img {
   position: relative;

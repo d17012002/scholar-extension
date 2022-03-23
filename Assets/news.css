@@ -5,7 +5,7 @@
 body{
     width: 250px;
     height: 450px;
-    background-color: #F2FFE9;
+    background-color: rgb(245, 250, 252);
 }
 
 #news-txt{
@@ -13,6 +13,11 @@ body{
     font-style: bold;
     font-weight: 500;
     font-size: 16px;
+}
+.card-img-top{
+    width: 180px;
+    height: 170px;
+    padding-left: 10px;
 }
 
 #news{
@@ -26,7 +31,12 @@ body{
     height: 450px;
     padding: 0 10%;
     overflow-y: auto;
-    background-color:#F2FFE9;
+    background-color:rgb(245, 250, 252);
+}
+.back{
+   padding-right: 180px;
+    cursor: pointer;
+
 }
 .btn{
     color: #557C55;
