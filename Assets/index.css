@@ -22,7 +22,7 @@ body {
   padding-top: 10px;
   padding-left: 12px;
   overflow: hidden;
-  background-color: #f2ffe9;
+  background-color: rgb(245, 250, 252);
 }
 
 .eg {
@@ -33,15 +33,15 @@ body {
 }
 em {
   font-weight: 400;
-  color: #d1e2d1;
+  color: rgb(0, 0, 0);
 }
 .overlay {
   visibility: visible;
 }
 .popup {
-  background-color: #557c55;
+  background-color: rgb(185, 209, 248);
   border-radius: 10px;
-  color: rgb(245, 248, 250);
+  color: rgb(3, 26, 75);
   visibility: hidden;
   margin-right: 12px;
   font-weight: 500;
@@ -58,7 +58,7 @@ em {
   position: absolute;
   top: 7px;
   width: 220px;
-  background: #557c55;
+  background: #89ABE3FF;
   height: 26px;
   border-radius: 30px;
   padding: 10px 10px;
@@ -69,10 +69,10 @@ em {
   transition: 0.8s;
 }
 ::placeholder {
-  color: #f2ffe9;
+  color: #89ABE3FF;
 }
 input {
-  color: white;
+  color: #000000;
 }
 .search-container:hover > .search-input {
   width: 173px;
@@ -87,7 +87,7 @@ input {
   transition: 0.8s;
 }
 .search-container .search-btn .fas {
-  color: #5cbdbb;
+  color: #89ABE3FF;
 }
 table {
   margin-top: -11px;
@@ -172,11 +172,11 @@ th:hover {
   width: 200px;
   top: 100%;
   border-radius: 7px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 0;
   margin: 2px 0 0 0;
-  box-shadow: 8px 8px 6px #888888;
-  background-color: #2b2c2b;
+  box-shadow: 8px 8px 6px #788aa8;
+  background-color: #9CC1FF;
   list-style-type: none;
 }
 .dd-input + .dd-menu {

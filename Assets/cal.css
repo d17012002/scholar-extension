@@ -1,0 +1,257 @@
+@font-face {
+    font-family: Pixel;
+    src: url('../fonts/PixelPoint.ttf');
+}
+
+@font-face {
+    font-family: Play;
+    src: url('../fonts/Play-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#calculator {
+    width: 250px;
+    height: 450px;
+    margin: auto;
+    border: 1px solid #000000;
+    background: #222831;
+    
+}
+
+
+.v {
+    font-size: 0.6em;
+    margin-top: 20px;
+    margin-right: 18px;
+    color: #acb4c1;
+    float: right;
+    font-family: 'Play', 'Russo One', sans-serif;
+    -webkit-user-select: none;
+}
+
+.raad {
+    font-size: 0.7em;
+    margin-top: 3px;
+    margin-right: 22px;
+    color: #acb4c1;
+    float: right;
+    font-family: 'Play', 'Russo One', sans-serif;
+}
+
+.form-control {
+    text-align: center;
+}
+
+#display-box {
+    position: relative;
+    padding-right: 7px;
+    padding-top: 22px;
+    padding-bottom: 0px;
+    width: 230px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 9px;
+    font: 30px bold;
+    font-family: "Pixel";
+    text-align: right;
+    border-radius: 5px;
+    background: #feffec;
+    box-shadow: 0px 0px 40px #2b4753;
+    display: inline-block;
+}
+
+.notification {
+    position: absolute;
+    z-index: 1;
+    left: 65px;
+    top: 58px;
+    font-size: 12px;
+    font-family: "Pixel";
+}
+
+.calc-rad {
+    position: absolute;
+    padding: 2px;
+    padding-left: 5px;
+    bottom: 2px;
+    font-size: 14px;
+    line-height: 14px;
+    outline-width: 5px;
+}
+
+.calc-hold{
+    position: absolute;
+    z-index: 1;
+    right: 8px;
+    top: 58px;
+    font-size: 12px;
+    font-family: "Pixel";
+}
+
+.calc-top {
+    margin: 7px;
+    display: inline-block;
+}
+
+.calc-left {
+    position: relative;
+}
+
+.sign {
+    position: absolute;
+    left: 39px;
+    bottom: 4px;
+    font-size: 8px;
+    font-family: inherit;
+    color: inherit;
+}
+
+.calc-down {
+    margin: 11px;
+    display: inline-block;
+}
+
+
+
+.trigo-keys {
+    width: 30px;
+    height: 20px;
+    font-size: 0.8em;
+    color: #fff;
+    margin: 3px;
+    cursor: pointer;
+    background: #51575f;
+    border: 1px solid #1a2f38;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Play', 'Russo One', sans-serif;
+    vertical-align: middle;
+    border: 1px solid #fdf7a5;
+}
+.keys {
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    font-family: 'Play', 'Russo One', sans-serif;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin: 1px;
+    width: 40px;
+    height: 24px;
+    border: 2px solid #fad457;
+    border-top-left-radius: .6em;
+    border-top-right-radius: .6em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background: #fad457;
+    display: inline-block;
+    vertical-align: middle;
+}
+.back{
+    margin: 10%;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+background: #eee;
+border-radius: 5px;
+vertical-align: middle;
+margin-left:112px;    
+border: 2px solid #fad457;
+}
+.back:hover {
+    background: #fad457;
+}
+.calc-second {
+    background-color: #222;
+    width: 30px;
+    height: 20px;
+    font-size: 0.65em;
+    color: #d86672;
+    margin: 3px;
+    cursor: pointer;
+    background: #2b4753;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Play', 'Russo One', sans-serif;
+    vertical-align: middle;
+}
+
+.trigo-keys:hover {
+    background: #fad457;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.trigo-keys:active {
+    font-size: 1em;
+    color: #fff;
+    background: #000000;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+
+
+.keys:hover {
+    color: #fff;
+    background: #3d77f3;
+}
+
+.keys:active {
+    color: #fff;
+    background: #000000;
+    border: 2px solid #3f4969;
+}
+
+.keys2 {
+    background: #ffffff;
+}
+
+.keys2:hover {
+    background: #3d77f3;
+}
+
+.keys2:active {
+    background: #000000;
+    border: 2px solid #3f4969;
+}
+
+.del-ac {
+    background: #EEEEEE;
+    width: 40px;
+}
+
+.del-ac:hover {
+    background: #3d77f3;
+}
+
+.del-ac:active {
+    color: #fff;
+    background: #000000;
+    border: 2px solid #3f4969;
+}
+
+.equal {
+    width: 40px;
+  background: #EEEEEE;
+}
+
+.calc-buttons {
+    display: none;
+}
+
+.calc-blank {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
