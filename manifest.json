@@ -23,5 +23,5 @@
     "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js",
     "https://kit.fontawesome.com/470207469d.js"
   ],
-  "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js https://kit.fontawesome.com/470207469d.js;  object-src 'self'"
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js https://kit.fontawesome.com/470207469d.js;  object-src 'self'"
 }
