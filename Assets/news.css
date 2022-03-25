@@ -20,7 +20,6 @@ body{
 }
 
 #news{
-    margin: 5% 0;
     text-align: center;
 }
 
@@ -35,7 +34,9 @@ body{
 .card::-webkit-scrollbar{
     display: none;
 }
-
+.back i{
+    color: black;
+}
 .btn{
     color: #557C55;
 }

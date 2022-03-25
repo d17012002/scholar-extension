@@ -150,20 +150,13 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
-.back{
-    margin: 10%;
-    height: 20px;
-    width: 20px;
+.back i{
+    margin-top: 10%;
+    display: inline-block;
+    color: aliceblue;
     cursor: pointer;
-background: #eee;
-border-radius: 5px;
-vertical-align: middle;
-margin-left:112px;    
-border: 2px solid #fad457;
 }
-.back:hover {
-    background: #fad457;
-}
+
 .calc-second {
     background-color: #222;
     width: 30px;

@@ -12,10 +12,12 @@ body {
 
 }
 .back{
-    margin: 5%;
-   
+    text-align: center;
     cursor: pointer;
-
+    margin-top: 25%;
+}
+.back i{
+    color: black;
 }
 #container{
     background-color: #acc9fc;
