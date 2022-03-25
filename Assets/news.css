@@ -6,6 +6,20 @@ body{
     width: 250px;
     height: 450px;
     background-color: rgb(245, 250, 252);
+    animation-name: news-slide;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+@keyframes news-slide {
+    from{
+        position: relative;
+        left: 500px;
+    }
+    to{
+        position: relative;
+        left: 0px;
+    }
 }
 
 #news-txt{

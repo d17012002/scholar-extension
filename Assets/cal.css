@@ -11,6 +11,20 @@
 body {
     margin: 0;
     padding: 0;
+    animation-name: cal-slide;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+@keyframes cal-slide {
+    from{
+        position: relative;
+        left: 500px;
+    }
+    to{
+        position: relative;
+        left: 0px;
+    }
 }
 
 #calculator {

@@ -9,8 +9,22 @@ body {
     width: 250px;
 	font-family: Tahoma,serif;
 	font-size: 10pt;
-
+    animation-name: tictac-slide;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
 }
+
+@keyframes tictac-slide {
+    from{
+        position: relative;
+        left: 500px;
+    }
+    to{
+        position: relative;
+        left: 0px;
+    }
+}
+
 .back{
     text-align: center;
     cursor: pointer;
