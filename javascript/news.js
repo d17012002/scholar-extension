@@ -9,7 +9,6 @@ searchFrom.addEventListener("submit", retrieve);
 function retrieve(e) {
   e.preventDefault();
 
-  success.innerText = "News fetched successfully!";
 
   let query = input.value;
   const pageSize = 4;
@@ -17,6 +16,7 @@ function retrieve(e) {
   let url = `https://newsapi.org/v2/everything?q=${query}&apiKey=${news_apiKey}&language=${language}&pageSize=${pageSize}`;
 
   fetch(url).then((res) => {
+    success.innerText = "News fetched successfully!";
     return res.json();
   }).then((data) => {
     let newsHTML = "";
