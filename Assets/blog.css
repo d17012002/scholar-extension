@@ -71,40 +71,28 @@ input {
 .search-container .search-btn .fas {
   color: #5cbdbb;
 }
+.blog-acc{
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 13px;
+  transition: 0.4s;
+  margin: 10px 0px;
+}
+
+.blog-body{
+  display: none;
+  overflow: hidden;
+}
+
+.active{
+  background-color: #ccc;
+}
 ::-webkit-scrollbar{
   width: 0px;
-}
-.hide-init1{
-  display: none;
-  position: relative;
-  bottom: 10px;
-}
-.hide-init2{
-  display: block;
-  position: relative;
-  bottom: 10px;
-}
-.hide-init3{
-  display: block;
-  position: relative;
-  bottom: 10px;
-}
-.hide-init4{
-  display: block;
-  position: relative;
-  bottom: 10px;
-}
-.hide1{
-  display: block;
-}
-.hide2{
-  display: none;
-}
-.hide3{
-  display: none;
-}
-.hide4{
-  display: none;
 }
 
 .blog-card {
