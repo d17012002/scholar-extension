@@ -124,7 +124,7 @@ function response(){
         claim(4);
         return;
     }
-	
+
 	//avert diagonal xox => claim edge, not corner
 	if(g.toString()==[0, 0, 1, 0, 2, 0, 1, 0, 0].toString()){
 	    claim(7);

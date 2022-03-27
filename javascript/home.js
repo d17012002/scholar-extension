@@ -28,4 +28,4 @@ function typing() {
 typing();
 setInterval(function () {
   window.location.replace("../public/index.html");
-}, 2500);
+}, 1500);

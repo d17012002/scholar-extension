@@ -36,6 +36,7 @@ body{
 .card-img-top{
     width: 250px;
     height: 170px;
+    
     border-radius: 1rem;
     padding: 0.5rem;
     /* background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("img/news.jpg"); */
@@ -78,4 +79,5 @@ body{
 
 .input-group, .btn{
     margin-top: 5%;
+    
 }

@@ -39,16 +39,22 @@ em {
   visibility: visible;
 }
 .popup {
+  overflow: scroll;
   background-color: rgb(185, 209, 248);
   border-radius: 10px;
   color: rgb(3, 26, 75);
   visibility: hidden;
   margin-right: 12px;
+  box-shadow: 4px 3px 4px #788aa8; 
   font-weight: 500;
-  padding: 3%;
+  padding: 4%;
   position: relative;
-  bottom: 250px;
+  bottom: 228px;
+  max-height: 380px;
   line-height: 20px;
+}
+::-webkit-scrollbar{
+  width: 0px;
 }
 .back {
   font-size: larger;
@@ -135,7 +141,6 @@ th:hover {
 /* Dropdown */
 .dropdown {
   display: inline-block;
-  margin-top: 20px;
   position: relative;
   right: 13px;
 }
@@ -175,7 +180,8 @@ th:hover {
   color: rgb(0, 0, 0);
   padding: 0;
   margin: 2px 0 0 0;
-  box-shadow: 8px 8px 6px #788aa8;
+  box-shadow: 4px 3px 4px #788aa8; 
+  
   background-color: #9CC1FF;
   list-style-type: none;
 }
@@ -210,4 +216,11 @@ td{
   padding-left: 8px;
   font-weight: 500;
   font-size: 11px;
+}
+.fa-moon{
+  padding-right: 8px;
+}
+.setting{
+  position: relative;
+  top: 165px;
 }

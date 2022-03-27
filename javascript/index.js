@@ -22,6 +22,7 @@ function showDef(){
 
         document.querySelector(".overlay").style.visibility = "hidden";
         document.querySelector(".popup").style.visibility = "visible";
+        document.querySelector(".setting").style.visibility = "hidden";
         
         if(data[0].meanings[0].definitions[0].example == undefined){
             document.querySelector("#word").innerHTML = ` ${data[0].word}`;
@@ -38,15 +39,21 @@ function showDef(){
 
         document.querySelector("#back").addEventListener('click', function () {
             document.querySelector(".overlay").style.visibility = "visible";
+            document.querySelector(".setting").style.visibility = "visible";
             document.querySelector(".popup").style.visibility = "hidden";
             document.querySelector(".eg").style.visibility = "hidden";
             input.value = '';
           })
 
     })
+    .catch((error) => {
+        document.querySelector("#word").innerHTML = " No such word";
+        document.querySelector("#speech").innerHTML = " undefined";
+        document.querySelector("#def").innerHTML = " undefined";
+      })
 }
 
-document.querySelector("#setName").addEventListener('click', function(){
+document.querySelector(".fa-gear").addEventListener('click', function(){
     let name = prompt("Enter your nick name.");
     localStorage.setItem("NAME", name);
     setInterval(function () {
