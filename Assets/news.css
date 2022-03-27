@@ -37,6 +37,7 @@ body{
     width: 250px;
     height: 170px;
     border-radius: 1rem;
+    padding: 0.5rem;
     /* background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("img/news.jpg"); */
 }
 .card-title {
@@ -49,7 +50,7 @@ body{
     font-size: 13px;
 }
 .card-body{
-    padding: 0;
+    padding: 0.5rem;
 }
 
 .card::-webkit-scrollbar{

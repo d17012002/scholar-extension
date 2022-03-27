@@ -69,7 +69,7 @@ em {
   transition: 0.8s;
 }
 ::placeholder {
-  color: #89ABE3FF;
+  color: rgba(20, 20, 20, 0.849);
 }
 input {
   color: #000000;
