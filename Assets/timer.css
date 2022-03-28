@@ -46,7 +46,9 @@ font-weight: 500;
 }
 .time{
 width:75px;
-margin-left: -10px;
+position: relative;
+left: 20px;
+
 
 }
 .back{
