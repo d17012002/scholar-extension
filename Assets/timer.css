@@ -45,9 +45,8 @@ font-weight: 500;
 
 }
 .time{
-width:50px;
-/* box-shadow: 2px 2px 2px 2px rgb(99, 93, 93); */
-box-shadow: 1px 1px 1px 1px #888888;
+width:75px;
+margin-left: -10px;
 
 }
 .back{
