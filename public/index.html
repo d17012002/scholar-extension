@@ -7,7 +7,6 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="../Assets/index.css">
-  <title>Student Pack</title>
 </head>
 
 <body>
@@ -21,8 +20,10 @@
       <center>
         <table>
           <tr>
-            <th><a href="news.html"><img style="box-shadow: 4px 3px 4px #788aa8; " class="news-img" src="../Assets/img/news.jpg" alt=""></a></th>
-            <th><a href="blog.html"><img style="box-shadow: 4px 3px 4px #788aa8; " class="news-img" src="../Assets/img/blog.jpg" alt=""></a></th>
+            <th><a href="news.html"><img style="box-shadow: 4px 3px 4px #788aa8; " class="news-img"
+                  src="../Assets/img/news.jpg" alt=""></a></th>
+            <th><a href="blog.html"><img style="box-shadow: 4px 3px 4px #788aa8; " class="news-img"
+                  src="../Assets/img/blog.jpg" alt=""></a></th>
           </tr>
         </table>
       </center>
@@ -32,11 +33,14 @@
         </div>
         <input type="checkbox" class="dd-input" id="test">
         <ul class="dd-menu">
-            <table class="app-table" >
+          <table class="app-table">
             <tr>
-              <th><a href="todo.html"><i style="text-shadow: 2px 2px 4px #1e4661;color: rgb(255, 255, 255);" class="fa-solid fa-2x fa-list-check"></i></a></th>
-              <th><a href="tictac.html"><i style="text-shadow: 2px 2px 4px #1e4661;color: rgb(255, 255, 255);" class="fa-solid fa-2x fa-gamepad"></i></a></th>
-              <th><a href="cal.html"><i style="text-shadow: 2px 2px 4px #1e4661;color: rgb(255, 255, 255);" class="fa-solid fa-2x fa-calculator"></i></a></th>
+              <th><a href="todo.html"><i style="text-shadow: 2px 2px 4px #3f87b8;color: rgb(255, 255, 255);"
+                    class="fa-solid fa-2x fa-list-check"></i></a></th>
+              <th><a href="tictac.html"><i style="text-shadow: 2px 2px 4px #3f87b8;color: rgb(255, 255, 255);"
+                    class="fa-solid fa-2x fa-gamepad"></i></a></th>
+              <th><a href="cal.html"><i style="text-shadow: 2px 2px 4px #3f87b8;color: rgb(255, 255, 255);"
+                    class="fa-solid fa-2x fa-calculator"></i></a></th>
             </tr>
             <tr>
               <td> <b>Todo</b></td>
@@ -44,20 +48,43 @@
               <td><b>Calc</b></td>
             </tr>
             <tr>
-              <th><a href="timer.html"><i style="text-shadow: 2px 2px 4px #1e4661; color: rgb(255, 255, 255);" class="fa-solid fa-2x fa-hourglass"></i></a></th>
-              <th><a href="joke.html"><i style="text-shadow: 2px 2px 4px #1e4661;color: rgb(255, 255, 255);"  class="fa-solid fa-2x fa-face-grin-tongue-wink"></i></a></th>
-              <th><a href="#"><i style="text-shadow: 2px 2px 4px #1e4661;color: rgb(255, 255, 255);" class="fa-solid fa-2x fa-circle-info"></i></a></th>
-              
+              <th><a href="timer.html"><i style="text-shadow: 2px 2px 4px #3f87b8; color: rgb(255, 255, 255);"
+                    class="fa-solid fa-2x fa-hourglass"></i></a></th>
+              <th><a href="joke.html"><i style="text-shadow: 2px 2px 4px #3f87b8;color: rgb(255, 255, 255);"
+                    class="fa-solid fa-2x fa-face-grin-tongue-wink"></i></a></th>
+              <th><a href="#"><i style="text-shadow: 2px 2px 4px #3f87b8;color: rgb(255, 255, 255);"
+                    class="fa-solid fa-2x fa-circle-info"></i></a></th>
+
             </tr>
             <tr>
               <td><b>Timer</b></td>
               <td><b>Jokes</b></td>
               <td><b>About</b></td>
             </tr>
-            </table>
+          </table>
         </ul>
-
       </label>
+    </div>
+    <div class="wrapper">
+      <div class="content">
+        <div class="quote-area">
+          <i class="fas fa-quote-left"></i>
+          <p class="quote">Never give up because you never know if the next try is going to be the one that works.</p>
+          <i class="fas fa-quote-right"></i>
+        </div>
+        <div class="author">
+          <span>__</span>
+          <span class="name">Mary Kay Ash</span>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="features">
+          <ul>
+            <li class="speech"><i class="fas fa-volume-up"></i></li>
+          </ul>
+          <button id="new-quote-btn">New Quote</button>
+        </div>
+      </div>
     </div>
     <div class="setting">
       <div id="setName"><i class="fa-solid fa-moon"> </i><i class="fa-solid fa-gear"> </i></div>
@@ -69,10 +96,11 @@
       <p>Meaning :<em id="def"> </em>
       <p class="eg">Example :<em id="eg"> </em></p>
       <div class="back">
-        <i id="back" class="fas fa-times-circle"></i>
+        <i style="color: rgb(107, 153, 228);" id="back" class="fas fa-times-circle"></i>
       </div>
     </div>
   </section>
 </body>
 <script src="../javascript/index.js"></script>
+
 </html>

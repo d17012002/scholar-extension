@@ -40,20 +40,20 @@ em {
 }
 .popup {
   overflow: scroll;
-  background-color: rgb(185, 209, 248);
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   color: rgb(3, 26, 75);
   visibility: hidden;
   margin-right: 12px;
-  box-shadow: 4px 3px 4px #788aa8; 
   font-weight: 500;
   padding: 4%;
   position: relative;
-  bottom: 228px;
+  bottom: 400px;
   max-height: 380px;
   line-height: 20px;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0px;
 }
 .back {
@@ -64,7 +64,7 @@ em {
   position: absolute;
   top: 7px;
   width: 220px;
-  background: #89ABE3FF;
+  background: #89abe3ff;
   height: 26px;
   border-radius: 30px;
   padding: 10px 10px;
@@ -93,7 +93,7 @@ input {
   transition: 0.8s;
 }
 .search-container .search-btn .fas {
-  color: #89ABE3FF;
+  color: #89abe3ff;
 }
 table {
   margin-top: -11px;
@@ -119,7 +119,7 @@ th:hover {
   width: 100px;
   border-radius: 7px;
 }
- #app-txt {
+#app-txt {
   position: relative;
   color: rgb(0, 0, 0);
   font-style: bold;
@@ -180,9 +180,8 @@ th:hover {
   color: rgb(0, 0, 0);
   padding: 0;
   margin: 2px 0 0 0;
-  box-shadow: 4px 3px 4px #788aa8; 
-  
-  background-color: #9CC1FF;
+  box-shadow: 4px 3px 4px #a4bce6;
+  background-color: #aec9f8;
   list-style-type: none;
 }
 .dd-input + .dd-menu {
@@ -212,15 +211,116 @@ th:hover {
   width: 180px;
   height: 150px;
 }
-td{
+td {
   padding-left: 8px;
   font-weight: 500;
   font-size: 11px;
 }
-.fa-moon{
+.fa-moon {
   padding-right: 8px;
 }
-.setting{
-  position: relative;
-  top: 165px;
+
+
+/* Quotes CSS */
+
+.wrapper {
+  height: 170px;
+  width: 225px;
+  overflow-x: scroll;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 5px 5px 1px;
+}
+.wrapperBox{
+  visibility: hidden;
+}
+header,
+.content :where(i, p, span) {
+  color: #202842;
+}
+.wrapper header {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+.content .quote-area {
+  display: flex;
+  justify-content: center;
+}
+.quote-area i {
+  font-size: 7px;
+}
+
+.quote-area i:last-child {
+  display: flex;
+  margin: 0 0 1px 4px;
+  align-items: flex-end;
+}
+.quote-area .quote {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  word-break: break-all;
+}
+.content .author {
+  display: flex;
+  font-size: 13px;
+  margin-top: 5px;
+  font-style: italic;
+  justify-content: flex-end;
+}
+.author span:first-child {
+  margin: -7px 5px 0 0;
+}
+.wrapper .buttons {
+  border-top: 1px solid #ccc;
+}
+.buttons .features {
+  display: flex;
+  margin-top: 1px;
+  align-items: center;
+  justify-content: space-between;
+}
+.features ul {
+  display: flex;
+}
+.features ul li {
+  margin: 0 1px;
+  height: 27px;
+  width: 27px;
+  display: flex;
+  cursor: pointer;
+  color: #5372f0;
+  list-style: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #5372f0;
+  transition: all 0.3s ease;
+}
+.features ul li:first-child {
+  margin-top: 10px;
+  margin-left: -35px;
+}
+ul li:is(:hover, .active) {
+  color: #fff;
+  background: #5372f0;
+}
+ul .speech.active {
+  pointer-events: none;
+}
+.buttons button {
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 30px;
+  background: #5372f0;
+}
+.buttons button.loading {
+  opacity: 0.7;
+  pointer-events: none;
 }

@@ -22,7 +22,7 @@ function showDef(){
 
         document.querySelector(".overlay").style.visibility = "hidden";
         document.querySelector(".popup").style.visibility = "visible";
-        document.querySelector(".setting").style.visibility = "hidden";
+        document.querySelector(".wrapper").style.visibility = "hidden";
         
         if(data[0].meanings[0].definitions[0].example == undefined){
             document.querySelector("#word").innerHTML = ` ${data[0].word}`;
@@ -39,7 +39,7 @@ function showDef(){
 
         document.querySelector("#back").addEventListener('click', function () {
             document.querySelector(".overlay").style.visibility = "visible";
-            document.querySelector(".setting").style.visibility = "visible";
+            document.querySelector(".wrapper").style.visibility = "visible";
             document.querySelector(".popup").style.visibility = "hidden";
             document.querySelector(".eg").style.visibility = "hidden";
             input.value = '';
@@ -52,7 +52,11 @@ function showDef(){
         document.querySelector("#def").innerHTML = " undefined";
       })
 }
+const quoteBox = document.querySelector(".wrapper");
+document.querySelector(".dd-button").addEventListener('click', function(){
+    document.querySelector(".wrapper").classList.toggle("wrapperBox");
 
+})
 document.querySelector(".fa-gear").addEventListener('click', function(){
     let name = prompt("Enter your nick name.");
     localStorage.setItem("NAME", name);
@@ -61,3 +65,35 @@ document.querySelector(".fa-gear").addEventListener('click', function(){
     }, 600);
 })
 
+
+// Get random quotes
+const quoteText = document.querySelector(".quote"),
+quoteBtn = document.querySelector("button"),
+authorName = document.querySelector(".name"),
+speechBtn = document.querySelector(".speech"),
+synth = speechSynthesis;
+
+function randomQuote(){
+    quoteBtn.classList.add("loading");
+    quoteBtn.innerText = "Loading Quote...";
+    fetch("http://api.quotable.io/random").then(response => response.json()).then(result => {
+        quoteText.innerText = result.content;
+        authorName.innerText = result.author;
+        quoteBtn.classList.remove("loading");
+        quoteBtn.innerText = "New Quote";
+    });
+}
+
+speechBtn.addEventListener("click", ()=>{
+    if(!quoteBtn.classList.contains("loading")){
+        let utterance = new SpeechSynthesisUtterance(`${quoteText.innerText} by ${authorName.innerText}`);
+        synth.speak(utterance);
+        setInterval(()=>{
+            !synth.speaking ? speechBtn.classList.remove("active") : speechBtn.classList.add("active");
+        }, 10);
+    }
+});
+
+randomQuote();
+
+quoteBtn.addEventListener("click", randomQuote);
