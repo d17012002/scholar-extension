@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Description here",
   "manifest_version": 2,
+  "icons": { 
+   "128": "Assets/img/logo.png" 
+  },
   "content_scripts" : [{
     "js": ["javascript/home.js"],
     "run_at":"document_idle",

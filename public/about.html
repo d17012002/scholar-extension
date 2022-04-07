@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            font-family: 'Alata', sans-serif;
+            font-weight: 400;
+            background: rgb(196, 216, 250);
+            font-weight: 500;
+            font-size: 14px;
+        }
+        #about-section{
+            width: 250px;
+            height: 450px;
+            overflow: scroll;
+        }
+        h3{
+            color: white;
+        }
+        .container{
+            padding: 2%;
+        }
+        .card-body{
+            padding: 3%;
+        }
+        .card-header{
+            padding: 3%;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        .fade-down{
+            animation-name: down;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+        @keyframes down {
+            from{
+                position: relative;
+                bottom: 400px;
+            }
+            to{
+                position: relative;
+                bottom: 0px;
+            }
+        }
+        ::-webkit-scrollbar{
+          width: 0px;
+        }
+        .back{
+            font-size: larger;
+            padding: 0;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="about-section">
+        <div class="container fade-down">
+            <div class="card">
+                <div class="card-header">
+                   <strong> Dictionary </strong>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Completed blog page and leaderboard made it fully responsive. Also, fixed some bugs
+                        and started working on
+                        team page.
+                </div>
+            </div>
+        </div>
+        <div class="container fade-down">
+            <div class="card">
+                <div class="card-header">
+                   <strong> Applications</strong>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Completed blog page and leaderboard made it fully responsive. Also, fixed some bugs
+                        and started working on
+                        team page.
+                </div>
+            </div>
+        </div>
+        <div class="container fade-down">
+            <div class="card">
+                <div class="card-header">
+                   <strong> Ad free youtube</strong>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Completed blog page and leaderboard made it fully responsive. Also, fixed some bugs
+                        and started working on
+                        team page.
+                </div>
+            </div>
+        </div>
+        <div class="container fade-down">
+            <div class="card">
+                <div class="card-header">
+                    <strong> Extension Developers </strong>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        <ul>
+                            <li>Anurag Kumar</li>
+                            <li>Subhransu Majhi</li>
+                            <li>Anant Dubey</li>
+                            <li>Ansh Chauhan </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center>
+    <div class="back">
+       <a href="index.html"> <i style="color: rgb(36, 35, 35);" class="fas fa-times-circle"></i></a>
+      </div>
+    </center>
+</body>
+
+</html>
