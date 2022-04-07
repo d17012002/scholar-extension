@@ -35,42 +35,7 @@ body {
   display: flex;
   font-size: larger;
 }
-.search-container {
-  position: relative;
-  top: 7px;
-  width: 190px;
-  background: #ffffff;
-  height: 24px;
-  border-radius: 30px;
-  padding: 10px 10px;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.8s;
-}
-::placeholder {
-  color: #4b4b4b;
-}
-input {
-  color: rgb(34, 34, 34);
-}
-.search-container:hover > .search-input {
-  width: 160px;
-}
-.search-container .search-input {
-  background: transparent;
-  border: none;
-  outline: none;
-  width: 0px;
-  font-weight: 500;
-  font-size: 14px;
-  transition: 0.8s;
-}
 
-.search-container .search-btn .fas {
-  color: #5cbdbb;
-}
 .blog-acc{
   cursor: pointer;
   padding: 0px;
@@ -116,6 +81,11 @@ img {
 p {
   padding: 1%;
   line-height: 15px;
+}
+.blog-head{
+  position: relative;
+  top: 10px;
+  left: 28px;
 }
 .blog-txt {
   padding-top: 4px;

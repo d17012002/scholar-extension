@@ -1,6 +1,7 @@
+import {medium_url} from "./apiKeys.js";
+
 let blogContainer = document.querySelector(".blog-container");
 
-const medium_url = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40bitbybit_vitb";
 function displayBlog() {
     fetch(medium_url).then(res=>{
         return res.json();
@@ -45,20 +46,6 @@ function displayBlog() {
 }
 
 displayBlog();
-
-// var myHeaders = new Headers();
-// myHeaders.append("Content-Type", "application/json");
-// var requestOptions = {
-//     method: "get",
-//     headers: myHeaders,
-//     redirect: "follow",
-    
-// };
-
-// fetch("https://v1.nocodeapi.com/d17012002/medium/AcPqIKWiYcRSeyFF", requestOptions)
-//     .then(response => response.text())
-//     .then(result => console.log(result[10]))
-//     .catch(error => console.log('error', error));
 
 
 
