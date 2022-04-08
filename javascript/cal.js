@@ -116,9 +116,6 @@
     };
 
 
-    // ---------- INIT... ---------- //
-
-    // collect all keys...
     for (var k = 2; k--;) {
         for (var l = Calc.children[k + 1], m = l.children, n = m.length; n--;) {
             keyBoard[l.children[n].textContent.replace(/\s*/g, '')] = l.children[n];
@@ -169,7 +166,6 @@
         }
     })(window.localStorage);
 
-    // ---------------- event listeners keys ---------------- //
 
     document.addEventListener('keypress', function (e) {
         var key = e.which,
@@ -239,7 +235,7 @@
         if (e.which === 46 || (e.keyCode == 8 && e.shiftKey)) {
             keyDown(false, keyBoard['AC']);
             doKey(keyBoard['AC'].textContent, true);
-            buffStr.pop(); // Raad added delete function from Keyborad
+            buffStr.pop(); 
             doKey('C', true);
             render('0');
         }
@@ -297,7 +293,6 @@
         }, 50);
     };
 
-    // ---------------- event listeners mouse --------------- //
 
     Calc.onmousedown = function (e) {
         keyDown(e);
@@ -464,15 +459,6 @@
                 replace(/#/g, ln === 2 ? '.' : ',');
         }
         display.firstChild.data = tmp;
-        // for common use: get values of pixels dynamically to stay free from design (...but outside this function)
-
-        // displayStyle.fontSize = '30px';
-
-        // while (display.offsetWidth > display.parentNode.offsetWidth - (bigger ? 20 : 20)) {
-        //     displayStyle.fontSize = (fontSize--) + 'px';
-        // }
-
-        // fixing the screen box size issue 5/21/2019
         var screenDigitSize = document.getElementById("box").innerHTML.length;
         if (screenDigitSize > 18) {
             displayStyle.fontSize = '23px';
@@ -683,8 +669,6 @@
             }
         }
     }
-
-    // ---------------- add-on (sign (Deg/rad) changer) ---------------- //
 
     var button = document.getElementById("rad");
     var sign = document.getElementsByClassName("sign")[0];

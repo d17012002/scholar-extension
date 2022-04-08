@@ -5,7 +5,7 @@ setInterval(function(){
     console.log("Ad detected!");
     skipButton[0].click();
   }
-},3000)
+},2000)
 
 
 
