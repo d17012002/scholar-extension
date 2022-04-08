@@ -1,16 +1,18 @@
 {
   "name": "Scholar Extension",
   "version": "0.0.1",
-  "description": "Description here",
+  "description": "Feature loaded multi-purpose extension which gives you quick access to various applications like , todo list, memes, tic tac toe game, timer, calculator, daily quotes, news, etc. and features like youtube ad-skipper.",
   "manifest_version": 2,
-  "icons": { 
-   "128": "Assets/img/logo.png" 
+  "icons": {
+    "128": "Assets/img/logo.png"
   },
-  "content_scripts" : [{
-    "js": ["javascript/home.js"],
-    "run_at":"document_idle",
-    "matches": ["<all_urls>"]
-  }],
+  "content_scripts": [
+    {
+      "js": ["javascript/home.js"],
+      "run_at": "document_idle",
+      "matches": ["<all_urls>"]
+    }
+  ],
   "background": [
     {
       "scripts": ["news.js"],
