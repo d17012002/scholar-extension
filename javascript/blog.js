@@ -1,24 +1,26 @@
-import {medium_url} from "./apiKeys.js";
+import {devto_url} from "./apiKeys.js";
 
 let blogContainer = document.querySelector(".blog-container");
 
 function displayBlog() {
-    fetch(medium_url).then(res=>{
+    fetch(devto_url).then(res=>{
         return res.json();
     }).then(data => {
         let blogData = "";
-        data.items.forEach(element =>{
+        data.forEach(element =>{
             
             let blog = `
             <div class="blog-card container">
                 <div class="blog-img">
-                    <a href="${element["link"]}" target="-blank">
-                    <img src="${element["thumbnail"]}">
+                    <a href="${element["url"]}" target="-blank">
+                    <img src="${element["cover_image"]}">
                     </a>
                 </div>
-                <button class="blog-acc">${element["title"]}   <i class="fa-solid fa-caret-down d1">  </i></button>
+                <button class="blog-acc">${element["title"]}   <i class="fa-solid fa-caret-down d1">  </i><p>By - <B>${element["user"]["name"]}</B></p></button>
                 <div class="blog-body">
-                    <p> ${element["description"]} </p>
+                <p> ${element["description"]}
+                <a href="${element["url"]}" target="-blank">Read More</a>
+                </p>
                 </div>
             </div>
             <br>`;

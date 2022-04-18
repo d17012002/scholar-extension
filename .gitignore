@@ -1,3 +1,4 @@
 *.log
 javascript/apiKeys.js
 .vscode
+*.zip
