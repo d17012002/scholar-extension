@@ -1,6 +1,6 @@
 {
   "name": "Scholar Extension",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Feature loaded multi-purpose extension which gives you quick access to various applications and services.",
   "manifest_version": 3,
   "icons": {
