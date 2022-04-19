@@ -2,7 +2,7 @@
   "name": "Scholar Extension",
   "version": "1.0.0",
   "description": "Feature loaded multi-purpose extension which gives you quick access to various applications and services.",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "icons": {
     "128": "Assets/img/logo.png"
   },
@@ -13,27 +13,21 @@
       "matches": ["<all_urls>"]
     }
   ],
-
-  "action": {
-    "default_popup": "public/home.html"
-  },
-
-  "host_permissions": [
-    "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js",
-    "https://kit.fontawesome.com/470207469d.js"
+  "background": [
+    {
+      "scripts": ["news.js"],
+      "persistent": false
+    }
   ],
-
-  "background": {
-    "service_worker": "javascript/background.js"
+  "browser_action": {
+    "default_popup": "public/home.html"
   },
 
   "permissions": [
     "tabs",
     "activeTab",
-    "scripting"
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js",
+    "https://kit.fontawesome.com/470207469d.js"
   ],
-  "content_security_policy": {
-     "extension_pages": "script-src 'self'; object-src 'self'",
-     "sandbox": "sandbox allow-scripts; script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js https://kit.fontawesome.com/470207469d.js; object-src 'self'"
-  }
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js https://kit.fontawesome.com/470207469d.js;  object-src 'self'"
 }
